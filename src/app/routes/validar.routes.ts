@@ -6,6 +6,7 @@ import { EnviarCorreoController } from '../controller/EnviarCorreoController'
 const controller: ValidarController = new ValidarController
 const enviarcorreocontroller : EnviarCorreoController = new EnviarCorreoController
 const router = Router()
+
 router.post('/', controller.validarDermatologo)
 router.post('/correo/', enviarcorreocontroller.enviarcorreo)
 export default router
