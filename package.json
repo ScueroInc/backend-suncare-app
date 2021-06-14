@@ -1,0 +1,42 @@
+{
+  "name": "weuvapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:prod": "node build/server.js",
+    "build:dev": "tsc-watch --onSuccess \" node build/server.js \" ",
+    "start": "tsc-watch --onSuccess \" node build/server.js \" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://dash128@bitbucket.org/teamweuvapp/weuvapp.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/teamweuvapp/weuvapp#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "helmet": "^4.4.1",
+    "jsdom": "^16.4.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.5.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/compression": "^1.7.0",
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.11",
+    "@types/helmet": "^4.0.0",
+    "@types/jsdom": "^16.2.6",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^14.14.27",
+    "tsc-watch": "^4.2.9",
+    "typescript": "^3.9.9"
+  }
+}
